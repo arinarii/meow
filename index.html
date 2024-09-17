@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris x Scrabble Hybrid</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="game-container">
+            <div id="input-row">
+                <!-- Input fields for each column -->
+                <input type="text" class="letter-input" maxlength="1" data-column="0">
+                <input type="text" class="letter-input" maxlength="1" data-column="1">
+                <input type="text" class="letter-input" maxlength="1" data-column="2">
+                <input type="text" class="letter-input" maxlength="1" data-column="3">
+                <input type="text" class="letter-input" maxlength="1" data-column="4">
+                <input type="text" class="letter-input" maxlength="1" data-column="5">
+                <input type="text" class="letter-input" maxlength="1" data-column="6">
+                <input type="text" class="letter-input" maxlength="1" data-column="7">
+                <input type="text" class="letter-input" maxlength="1" data-column="8">
+                <input type="text" class="letter-input" maxlength="1" data-column="9">
+            </div>
+
+            <div id="game-board"></div>
+        </div>
+
+        <div id="right-panel">
+            <div id="found-word-display">You found this word: (None yet)</div>
+            <div id="total-score-display">Total Score: 0</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
