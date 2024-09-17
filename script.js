@@ -82,7 +82,7 @@ function checkForWords() {
                 rowWord += cell.textContent || ''; // Gather letters in the row
                 rowCells.push(cell);
             }
-            if (rowWord.length >= 4 && dictionary.includes(rowWord)) {
+            if (rowWord.length === 4 && dictionary.includes(rowWord)) {
                 console.log('Valid 4-letter word found in row:', rowWord);
                 displayFoundWord(rowWord);
                 clearCells(rowCells); // Delete the row if it's a valid 4-letter word
